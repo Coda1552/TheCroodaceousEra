@@ -34,8 +34,8 @@ public class DesertBaobabFeature extends Feature<NoFeatureConfig>
     public static int branchHeightExtra = 0;
     
     //thinner, 'top' trunk placement
-    public static int minimumTrunkTopHeight = 2;
-    public static int trunkTopHeightExtra = 1;
+    public static int minimumTrunkTopHeight = 1;
+    public static int trunkTopHeightExtra = 0;
     
     //branches on the top trunk placement
     public static int minimumTopBranchHeight = 1;
@@ -85,7 +85,7 @@ public class DesertBaobabFeature extends Feature<NoFeatureConfig>
                 }
             }
         }
-        int trunkTopHeight = minimumTrunkTopHeight + random.nextInt(trunkTopHeightExtra + 1);
+        int trunkTopHeight = minimumTrunkTopHeight;
     
         for (int i = 0; i < trunkTopHeight; i++)
         {
