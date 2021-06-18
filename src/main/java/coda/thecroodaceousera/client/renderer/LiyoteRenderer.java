@@ -2,6 +2,7 @@ package coda.thecroodaceousera.client.renderer;
 
 import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.client.model.LiyoteModel;
+import coda.thecroodaceousera.client.renderer.layer.LiyoteHeldItemLayer;
 import coda.thecroodaceousera.entity.LiyoteEntity;
 import com.google.common.collect.Maps;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -23,7 +24,7 @@ public class LiyoteRenderer extends MobRenderer<LiyoteEntity, LiyoteModel<Liyote
     }
 
     @Override
-    public ResourceLocation getEntityTexture(LiyoteEntity entity) {
+    public ResourceLocation getTextureLocation(LiyoteEntity entity) {
         return TEXTURES.getOrDefault(entity.getVariant(), TEXTURES.get(0));
     }
 }

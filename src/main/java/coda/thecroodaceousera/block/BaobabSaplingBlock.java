@@ -10,33 +10,28 @@ import net.minecraft.world.server.ServerWorld;
 
 import java.util.Random;
 
-public class BaobabSaplingBlock extends SaplingBlock
-{
-    public BaobabSaplingBlock(Properties properties)
-    {
+import net.minecraft.block.AbstractBlock.Properties;
+
+public class BaobabSaplingBlock extends SaplingBlock {
+    public BaobabSaplingBlock(Properties properties) {
         super(null, properties);
     }
     
     @Override
-    public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos)
-    {
-        return worldIn.getBlockState(pos.down()).getBlock().equals(CroodsBlocks.CROODACEOUS_SAND.get());
+    public boolean canSurvive(BlockState state, IWorldReader worldIn, BlockPos pos) {
+        return worldIn.getBlockState(pos.below()).getBlock().equals(CroodsBlocks.CROODACEOUS_SAND.get());
     }
     
     @Override
-    public void placeTree(ServerWorld world, BlockPos pos, BlockState state, Random rand)
-    {
-        if (state.get(STAGE) == 0)
-        {
-            world.setBlockState(pos, state.func_235896_a_(STAGE), 4);
+    public void advanceTree(ServerWorld world, BlockPos pos, BlockState state, Random rand) {
+        if (state.getValue(STAGE) == 0) {
+            world.setBlock(pos, state.cycle(STAGE), 4);
         }
-        else
-        {
-            if (!net.minecraftforge.event.ForgeEventFactory.saplingGrowTree(world, rand, pos))
-            {
+        else {
+            if (!net.minecraftforge.event.ForgeEventFactory.saplingGrowTree(world, rand, pos)) {
                 return;
             }
-            CroodsFeatures.DESERT_BAOBAB.get().generate(world, world.getChunkProvider().generator, rand, pos, null);
+            CroodsFeatures.DESERT_BAOBAB.get().place(world, world.getChunkSource().generator, rand, pos, null);
         }
     }
 }

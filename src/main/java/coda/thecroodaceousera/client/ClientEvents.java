@@ -1,6 +1,7 @@
 package coda.thecroodaceousera.client;
 
 import coda.thecroodaceousera.Croods;
+import coda.thecroodaceousera.client.renderer.MousephantRenderer;
 import coda.thecroodaceousera.init.CroodsBlocks;
 import coda.thecroodaceousera.item.CroodsSpawnEggItem;
 import coda.thecroodaceousera.client.renderer.JackrobatRenderer;
@@ -23,12 +24,14 @@ public class ClientEvents {
     public static void clientSetup() {
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.JACKROBAT.get(), JackrobatRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.LIYOTE.get(), LiyoteRenderer::new);
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.CROODACEOUS_SHRUB.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_WALL_BRANCHES.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_BRANCHES.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_TRAPDOOR.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_DOOR.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_SAPLING.get(), RenderType.getCutout());
+        RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.MOUSEPHANT.get(), MousephantRenderer::new);
+
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.CROODACEOUS_SHRUB.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_WALL_BRANCHES.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_BRANCHES.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_TRAPDOOR.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_DOOR.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_SAPLING.get(), RenderType.cutout());
     }
 
     @SubscribeEvent

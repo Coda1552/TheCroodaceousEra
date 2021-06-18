@@ -40,8 +40,13 @@
   },
   "features": [
     [
-      "thecroodaceousera:patch_croodaceous_shrub",
+      "thecroodaceousera:desert_rock"
+    ],
+    [
       "thecroodaceousera:desert_trees"
+    ],
+    [
+      "thecroodaceousera:patch_croodaceous_shrub"
     ],
     [
       "minecraft:ore_dirt",

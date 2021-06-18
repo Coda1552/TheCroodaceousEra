@@ -2,12 +2,17 @@ package coda.thecroodaceousera;
 
 import coda.thecroodaceousera.entity.JackrobatEntity;
 import coda.thecroodaceousera.entity.LiyoteEntity;
+import coda.thecroodaceousera.entity.MousephantEntity;
 import coda.thecroodaceousera.init.CroodsFeatures;
 import coda.thecroodaceousera.init.CroodsItems;
 import coda.thecroodaceousera.init.CroodsBlocks;
 import coda.thecroodaceousera.init.CroodsEntities;
 import coda.thecroodaceousera.client.ClientEvents;
+import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
+import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.world.gen.Heightmap;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -22,6 +27,7 @@ public class Croods {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         bus.addListener(this::registerClient);
+        bus.addListener(this::registerEntityAttributes);
         bus.addListener(this::registerCommon);
 
         CroodsItems.REGISTER.register(bus);
@@ -30,13 +36,14 @@ public class Croods {
         CroodsFeatures.REGISTER.register(bus);
     }
 
-    private void registerEntityAttributes() {
-        GlobalEntityTypeAttributes.put(CroodsEntities.JACKROBAT.get(), JackrobatEntity.registerAttributes().create());
-        GlobalEntityTypeAttributes.put(CroodsEntities.LIYOTE.get(), LiyoteEntity.registerAttributes().create());
+    private void registerEntityAttributes(EntityAttributeCreationEvent event) {
+        event.put(CroodsEntities.JACKROBAT.get(), JackrobatEntity.createAttributes().build());
+        event.put(CroodsEntities.LIYOTE.get(), LiyoteEntity.createAttributes().build());
+        event.put(CroodsEntities.MOUSEPHANT.get(), MousephantEntity.createAttributes().build());
     }
 
     private void registerCommon(FMLCommonSetupEvent event) {
-        registerEntityAttributes();
+        EntitySpawnPlacementRegistry.register(CroodsEntities.LIYOTE.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, LiyoteEntity::checkLiyoteSpawnRules);
     }
 
     private void registerClient(FMLClientSetupEvent event) {

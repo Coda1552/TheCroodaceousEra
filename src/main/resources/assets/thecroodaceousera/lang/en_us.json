@@ -3,6 +3,14 @@
 
   "item.thecroodaceousera.ramu_egg": "Ramu Egg",
 
+  "item.thecroodaceousera.jackrobat_spawn_egg": "Jackrobat Spawn Egg",
+  "item.thecroodaceousera.liyote_spawn_egg": "Liyote Spawn Egg",
+  "item.thecroodaceousera.mousephant_spawn_egg": "Mousephant Spawn Egg",
+
+  "entity.thecroodaceousera.jackrobat": "Jackrobat",
+  "entity.thecroodaceousera.liyote": "Liyote",
+  "entity.thecroodaceousera.mousephant": "Mousephant",
+
   "block.thecroodaceousera.croodaceous_sand": "Croodaceous Sand",
   "block.thecroodaceousera.croodaceous_sandstone": "Croodaceous Sandstone",
   "block.thecroodaceousera.croodaceous_sandstone_stairs": "Croodaceous Sandstone Stairs",
@@ -44,12 +52,6 @@
   "block.thecroodaceousera.desert_baobab_fence": "Desert Baobab Fence",
   "block.thecroodaceousera.desert_baobab_fence_gate": "Desert Baobab Fence Gate",
   "block.thecroodaceousera.potted_desert_baobab_sapling": "Potted Desert Baobab Sapling",
-  
-  "entity.thecroodaceousera.jackrobat": "Jackrobat",
-  "entity.thecroodaceousera.liyote": "Liyote",
-
-  "item.thecroodaceousera.jackrobat_spawn_egg": "Jackrobat Spawn Egg",
-  "item.thecroodaceousera.liyote_spawn_egg": "Liyote Spawn Egg",
 
   "biome.thecroodaceousera.croodaceous_desert": "Croodaceous Desert"
 }

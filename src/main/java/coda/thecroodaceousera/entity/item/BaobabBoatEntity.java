@@ -8,7 +8,7 @@ public class BaobabBoatEntity extends BoatEntity {
 
     public BaobabBoatEntity(EntityType<? extends BaobabBoatEntity> type, World world) {
         super(type, world);
-        this.preventEntitySpawning = true;
+        this.blocksBuilding = true;
     }
 
    /* public BaobabBoatEntity(World worldIn, double x, double y, double z) {

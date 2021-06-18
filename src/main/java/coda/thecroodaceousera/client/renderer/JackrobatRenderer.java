@@ -15,7 +15,7 @@ public class JackrobatRenderer extends MobRenderer<JackrobatEntity, JackrobatMod
     }
 
     @Override
-    public ResourceLocation getEntityTexture(JackrobatEntity entity) {
+    public ResourceLocation getTextureLocation(JackrobatEntity entity) {
         return TEXTURE;
     }
 }
