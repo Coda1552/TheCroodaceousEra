@@ -1,6 +1,8 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/cube_column",
     "textures": {
-        "all": "thecroodaceousera:block/chiseled_hoodoo_shale"
+        "end": "thecroodaceousera:block/hoodoo_shale_tiles",
+        "side": "thecroodaceousera:block/chiseled_hoodoo_shale"
     }
 }
+

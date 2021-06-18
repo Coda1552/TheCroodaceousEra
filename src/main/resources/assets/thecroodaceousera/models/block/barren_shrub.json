@@ -9,7 +9,8 @@
 		"6": "thecroodaceousera:block/shrub/shrub_bl_2",
 		"7": "thecroodaceousera:block/shrub/shrub_tl_2",
 		"8": "thecroodaceousera:block/shrub/shrub_tr_2",
-		"particle": "thecroodaceousera:block/shrub/shrub_bl"
+		"particle": "thecroodaceousera:block/shrub/shrub_bl",
+		"#missing": "thecroodaceousera:item/croodaceous_shrub"
 	},
 	"elements": [
 		{

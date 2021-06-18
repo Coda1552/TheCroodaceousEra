@@ -1,0 +1,38 @@
+{
+  "mousephant.ambient": {
+    "subtitle": "thecroodaceousera.mousephant.ambient",
+    "sounds": [
+      {
+        "name": "thecroodaceousera:mousephant/ambient",
+        "stream": true
+      }
+    ]
+  },
+  "mousephant.hurt": {
+    "subtitle": "thecroodaceousera.mousephant.hurt",
+    "sounds": [
+      {
+        "name": "thecroodaceousera:mousephant/hurt",
+        "stream": true
+      }
+    ]
+  },
+  "mousephant.death": {
+    "subtitle": "thecroodaceousera.mousephant.death",
+    "sounds": [
+      {
+        "name": "thecroodaceousera:mousephant/death",
+        "stream": true
+      }
+    ]
+  },
+  "mousephant.trumpet": {
+    "subtitle": "thecroodaceousera.mousephant.trumpet",
+    "sounds": [
+      {
+        "name": "thecroodaceousera:mousephant/trumpet",
+        "stream": true
+      }
+    ]
+  }
+}

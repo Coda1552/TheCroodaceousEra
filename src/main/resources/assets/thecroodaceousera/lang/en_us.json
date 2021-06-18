@@ -32,7 +32,7 @@
   "block.thecroodaceousera.polished_hoodoo_shale_stairs": "Polished Hoodoo Shale Stairs",
   "block.thecroodaceousera.hoodoo_shale_wall": "Hoodoo Shale Wall",
 
-  "block.thecroodaceousera.croodaceous_shrub": "Croodaceous Shrub",
+  "block.thecroodaceousera.barren_shrub": "Barren Shrub",
   "block.thecroodaceousera.desert_baobab_branches": "Desert Baobab Branches",
   "block.thecroodaceousera.desert_baobab_wall_branches": "Desert Baobab Wall Branches",
   "block.thecroodaceousera.desert_baobab_log": "Desert Baobab Log",
@@ -53,5 +53,11 @@
   "block.thecroodaceousera.desert_baobab_fence_gate": "Desert Baobab Fence Gate",
   "block.thecroodaceousera.potted_desert_baobab_sapling": "Potted Desert Baobab Sapling",
 
-  "biome.thecroodaceousera.croodaceous_desert": "Croodaceous Desert"
+  "biome.thecroodaceousera.croodaceous_desert": "Croodaceous Desert",
+  "biome.thecroodaceousera.croodaceous_hoodoos": "Croodaceous Hoodoos",
+
+  "thecroodaceousera.mousephant.ambient": "Mousephant squeals",
+  "thecroodaceousera.mousephant.death": "Mousephant dies",
+  "thecroodaceousera.mousephant.hurt": "Mousephant hurts",
+  "thecroodaceousera.mousephant.trumpet": "Mousephant trumpets"
 }

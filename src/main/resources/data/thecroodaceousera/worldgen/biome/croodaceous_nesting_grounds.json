@@ -1,7 +1,7 @@
 {
   "surface_builder": "thecroodaceousera:croodaceous_desert",
-  "depth": 0.925,
-  "scale": 0.02,
+  "depth": 0.425,
+  "scale": 0.08,
   "temperature": 0.8,
   "downfall": 0.1,
   "precipitation": "none",
@@ -22,17 +22,25 @@
     }
   },
   "starts": [],
-  "spawners": {},
+  "spawners": {
+    "creature": [
+      {
+        "type": "thecroodaceousera:liyote",
+        "weight": 1,
+        "minCount": 3,
+        "maxCount": 5
+      }
+    ]
+  },
   "spawn_costs": {},
   "carvers": {
     "air": [
-      "minecraft:cave",
-      "minecraft:nether_cave"
+      "minecraft:cave"
     ]
   },
   "features": [
     [
-      "thecroodaceousera:hoodoo"
+      "thecroodaceousera:desert_trees"
     ],
     [
       "thecroodaceousera:patch_barren_shrub"

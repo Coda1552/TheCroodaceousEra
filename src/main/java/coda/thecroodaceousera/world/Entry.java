@@ -1,4 +1,4 @@
-package coda.thecroodaceousera.world.feature;
+package coda.thecroodaceousera.world;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;

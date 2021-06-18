@@ -3,10 +3,7 @@ package coda.thecroodaceousera;
 import coda.thecroodaceousera.entity.JackrobatEntity;
 import coda.thecroodaceousera.entity.LiyoteEntity;
 import coda.thecroodaceousera.entity.MousephantEntity;
-import coda.thecroodaceousera.init.CroodsFeatures;
-import coda.thecroodaceousera.init.CroodsItems;
-import coda.thecroodaceousera.init.CroodsBlocks;
-import coda.thecroodaceousera.init.CroodsEntities;
+import coda.thecroodaceousera.init.*;
 import coda.thecroodaceousera.client.ClientEvents;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -34,6 +31,7 @@ public class Croods {
         CroodsBlocks.REGISTER.register(bus);
         CroodsEntities.REGISTER.register(bus);
         CroodsFeatures.REGISTER.register(bus);
+        CroodsSounds.REGISTER.register(bus);
     }
 
     private void registerEntityAttributes(EntityAttributeCreationEvent event) {

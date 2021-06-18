@@ -2,61 +2,71 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -1573250461,
+    "seed": -46354753,
+    "settings": "minecraft:overworld",
     "biome_source": {
       "type": "minecraft:multi_noise",
-      "seed": -1573250461,
+      "seed": -46354753,
       "altitude_noise": {
-        "firstOctave": -7,
+        "firstOctave": -6,
         "amplitudes": [
           1,
-          1
+          20
         ]
       },
       "temperature_noise": {
-        "firstOctave": -7,
+        "firstOctave": -10,
         "amplitudes": [
           1,
           1
         ]
       },
       "humidity_noise": {
-        "firstOctave": -7,
+        "firstOctave": -3,
         "amplitudes": [
           1,
           1
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -7,
+        "firstOctave": -10,
         "amplitudes": [
-          1,
+          0,
           1
         ]
       },
       "biomes": [
         {
+          "biome": "thecroodaceousera:croodaceous_nesting_grounds",
+          "parameters": {
+            "altitude": 0.24,
+            "temperature": 0.8,
+            "humidity": 0.1,
+            "weirdness": 0.254,
+            "offset": 0.1
+          }
+        },
+        {
           "biome": "thecroodaceousera:croodaceous_desert",
           "parameters": {
-            "altitude": 0.1,
+            "altitude": 0.2,
             "temperature": 0.7,
-            "humidity": 0.2,
-            "weirdness": 0.1,
-            "offset": 0.1
+            "humidity": 0.15,
+            "weirdness": 0.05,
+            "offset": 0.05
           }
         },
         {
           "biome": "thecroodaceousera:croodaceous_hoodoos",
           "parameters": {
-            "altitude": 0.2,
-            "temperature": 0.7,
+            "altitude": 0.1,
+            "temperature": 0.8,
             "humidity": 0.1,
             "weirdness": 0.1,
             "offset": 0.1
           }
         }
       ]
-    },
-    "settings": "minecraft:overworld"
+    }
   }
 }

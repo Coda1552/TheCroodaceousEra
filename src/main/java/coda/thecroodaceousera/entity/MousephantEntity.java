@@ -2,6 +2,7 @@ package coda.thecroodaceousera.entity;
 
 import coda.thecroodaceousera.init.CroodsEntities;
 import coda.thecroodaceousera.init.CroodsItems;
+import coda.thecroodaceousera.init.CroodsSounds;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.*;
@@ -43,22 +44,22 @@ public class MousephantEntity extends AnimalEntity {
     }
 
     public static AttributeModifierMap.MutableAttribute createAttributes() {
-        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.MOVEMENT_SPEED, (double)0.2F);
+        return MobEntity.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.MOVEMENT_SPEED, 0.2F);
     }
 
     @Override
     protected SoundEvent getAmbientSound() {
-        return null;
+        return CroodsSounds.MOUSEPHANT_AMBIENT.get();
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource p_184601_1_) {
-        return null;
+        return CroodsSounds.MOUSEPHANT_HURT.get();
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return null;
+        return CroodsSounds.MOUSEPHANT_DEATH.get();
     }
 
     @Override
@@ -68,7 +69,7 @@ public class MousephantEntity extends AnimalEntity {
 
     @Override
     protected float getSoundVolume() {
-        return 0.4F;
+        return 0.8F;
     }
 
     @Override

@@ -2,6 +2,7 @@ package coda.thecroodaceousera.init;
 
 import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.item.CroodsSpawnEggItem;
+import coda.thecroodaceousera.item.RamuEggItem;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +18,7 @@ public class CroodsItems {
         }
     };
 
-    public static final RegistryObject<Item> RAMU_EGG = REGISTER.register("ramu_egg", () -> new Item(new Item.Properties().tab(GROUP).stacksTo(16).food(new Food.Builder().nutrition(8).saturationMod(0.5f).build())));
+    public static final RegistryObject<Item> RAMU_EGG = REGISTER.register("ramu_egg", () -> new RamuEggItem(new Item.Properties().tab(GROUP).stacksTo(16).food(new Food.Builder().nutrition(8).saturationMod(0.5f).build())));
     //public static final RegistryObject<Item> BAOBAB_BOAT_ITEM = REGISTER.register("baobab_boat_item", () -> new BaobabBoatItem(new Item.Properties().group(GROUP).maxStackSize(1)));
 
     // Spawn Eggs
@@ -28,7 +29,7 @@ public class CroodsItems {
     // Block Items
     public static final RegistryObject<BlockItem> DESERT_BAOBAB_SAPLING = REGISTER.register("desert_baobab_sapling", () -> new BlockItem(CroodsBlocks.DESERT_BAOBAB_SAPLING.get(), new Item.Properties().tab(GROUP)));
 
-    public static final RegistryObject<BlockItem> CROODACEOUS_SHRUB = REGISTER.register("croodaceous_shrub", () -> new BlockItem(CroodsBlocks.CROODACEOUS_SHRUB.get(), new Item.Properties().tab(GROUP)));
+    public static final RegistryObject<BlockItem> CROODACEOUS_SHRUB = REGISTER.register("croodaceous_shrub", () -> new BlockItem(CroodsBlocks.BARREN_SHRUB.get(), new Item.Properties().tab(GROUP)));
     public static final RegistryObject<BlockItem> CROODACEOUS_SAND = REGISTER.register("croodaceous_sand", () -> new BlockItem(CroodsBlocks.CROODACEOUS_SAND.get(), new Item.Properties().tab(GROUP)));
     public static final RegistryObject<BlockItem> CROODACEOUS_SANDSTONE = REGISTER.register("croodaceous_sandstone", () -> new BlockItem(CroodsBlocks.CROODACEOUS_SANDSTONE.get(), new Item.Properties().tab(GROUP)));
     public static final RegistryObject<BlockItem> CHISELED_CROODACEOUS_SANDSTONE = REGISTER.register("chiseled_croodaceous_sandstone", () -> new BlockItem(CroodsBlocks.CHISELED_CROODACEOUS_SANDSTONE.get(), new Item.Properties().tab(GROUP)));

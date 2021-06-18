@@ -19,15 +19,27 @@ public class HoodooFeature extends Feature<NoFeatureConfig> {
 
     @Override
     public boolean place(ISeedReader seedReader, ChunkGenerator chunkGenerator, Random random, BlockPos pos, NoFeatureConfig config) {
-        if (seedReader.getBlockState(pos.below()).getBlock() == CroodsBlocks.CROODACEOUS_SAND.get() || seedReader.getBlockState(pos.below()).getBlock() == Blocks.TERRACOTTA) {
+        if (seedReader.getBlockState(pos.below()).getBlock() == CroodsBlocks.CROODACEOUS_SAND.get()) {
             int height = random.nextInt(4) + 14;
             int width = random.nextInt(5) + 6;
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j <= height; j++) {
                     double remove = 4 + Math.sin(j * -(Math.PI / (height + 8 + random.nextInt(2)))) * 2;
+                    double remove2 = 2 + Math.cos(j *- (Math.PI / height + 8)) * 2;
                     for (int k = -width; k <= width; k++) {
                         for (int m = -width; m <= width; m++) {
-                            if (k * k + m * m <= remove * remove) {
+                            for (int l = -5; l < 0; l++) {
+                                if (k * k + m * m <= remove2 * remove2) {
+                                    if (i == 1) {
+                                        seedReader.setBlock(pos.offset(k, l, m), CroodsBlocks.HOODOO_SHALE.get().defaultBlockState(), 2);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    for (int k = -width; k <= width; k++) {
+                        for (int m = -width; m <= width; m++) {
+                            if (k * k + m * m <= -remove * -remove) {
                                 if (i == 1) {
                                     seedReader.setBlock(pos.offset(k, j, m), CroodsBlocks.HOODOO_SHALE.get().defaultBlockState(), 2);
                                 }
@@ -37,11 +49,11 @@ public class HoodooFeature extends Feature<NoFeatureConfig> {
                     int topWidth = random.nextInt(5) + 8;
                     int topHeight = 3;
                     for (int b = j; b <= topHeight; b++) {
-                        double remove2 = 2 + Math.sin(b * (Math.PI / topWidth)) * 4;
-                        double remove3 = 2 + Math.cos(b * (Math.PI / topWidth)) * 4;
+                        double remove3 = 2 + Math.sin(b * (Math.PI / topWidth)) * 4;
+                        double remove4 = 2 + Math.cos(b * (Math.PI / topWidth)) * 4;
                         for (int l = -topWidth; l < topWidth; l++) {
                             for (int n = -topWidth; n < topWidth; n++) {
-                                if (l * l + n * n <= remove2 * remove2) {
+                                if (l * l + n * n <= remove3 * remove3) {
                                     if (MathHelper.abs(l) < 6 && MathHelper.abs(n) < 6) {
                                         for (int k = height; k < (height + 5 + random.nextInt(2)); k++) {
                                             if (i == 2) {
@@ -50,11 +62,11 @@ public class HoodooFeature extends Feature<NoFeatureConfig> {
                                         }
                                     }
                                 }
-                                if (l * l + n * n <= remove3 * remove3) {
+                                if (l * l + n * n <= remove4 * remove4) {
                                     if (MathHelper.abs(l) < 6 && MathHelper.abs(n) < 6) {
                                         for (int k = height; k < (height + 5 + random.nextInt(2)); k++) {
                                             if (i == 2) {
-                                                seedReader.setBlock(pos.offset(l, b + topHeight + height, n), CroodsBlocks.HOODOO_SHALE.get().defaultBlockState(), 2);
+                                                seedReader.setBlock(pos.offset(l, b + height + topHeight, n), CroodsBlocks.HOODOO_SHALE.get().defaultBlockState(), 2);
                                             }
                                         }
                                     }

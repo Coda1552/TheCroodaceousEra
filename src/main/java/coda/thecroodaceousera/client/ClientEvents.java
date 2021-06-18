@@ -26,7 +26,7 @@ public class ClientEvents {
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.LIYOTE.get(), LiyoteRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.MOUSEPHANT.get(), MousephantRenderer::new);
 
-        RenderTypeLookup.setRenderLayer(CroodsBlocks.CROODACEOUS_SHRUB.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CroodsBlocks.BARREN_SHRUB.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_WALL_BRANCHES.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_BRANCHES.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_TRAPDOOR.get(), RenderType.cutout());

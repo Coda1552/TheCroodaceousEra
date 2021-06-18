@@ -2,9 +2,11 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count",
+      "type": "minecraft:count_noise",
       "config": {
-        "count": 30
+        "noise_level": 0.1,
+        "below_noise": 1,
+        "above_noise": 1
       }
     },
     "feature": {
@@ -20,13 +22,13 @@
             "decorator": {
               "type": "minecraft:range",
               "config": {
-                "maximum": 128,
-                "bottom_offset": 0,
+                "maximum": 999999999,
+                "bottom_offset": 899999,
                 "top_offset": 0
               }
             },
             "feature": {
-              "type": "thecroodaceousera:hoodoo",
+              "type": "thecroodaceousera:bone_pile_1",
               "config": {}
             }
           }

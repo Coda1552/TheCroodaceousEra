@@ -40,13 +40,11 @@
   },
   "features": [
     [
-      "thecroodaceousera:desert_rock"
-    ],
-    [
-      "thecroodaceousera:desert_trees"
-    ],
-    [
-      "thecroodaceousera:patch_croodaceous_shrub"
+      "thecroodaceousera:bone_pile_1",
+      "thecroodaceousera:bone_pile_2",
+      "thecroodaceousera:bone_pile_3",
+      "thecroodaceousera:bone_pile_4",
+      "thecroodaceousera:bone_pile_5"
     ],
     [
       "minecraft:ore_dirt",
