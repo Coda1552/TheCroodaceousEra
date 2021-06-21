@@ -26,15 +26,15 @@ public class DesertBaobabFeature extends Feature<NoFeatureConfig> {
     
     //trunk placement
     public static int minimumTrunkHeight = 4;
-    public static int trunkHeightExtra = 2;
+    public static int trunkHeightExtra = 1;
     
     //branches on the trunk placement
     public static int minimumBranchHeight = 2;
     public static int branchHeightExtra = 0;
     
     //thinner, 'top' trunk placement
-    public static int minimumTrunkTopHeight = 1;
-    public static int trunkTopHeightExtra = 1;
+    public static int minimumTrunkTopHeight = 0;
+    public static int trunkTopHeightExtra = 0;
     
     //branches on the top trunk placement
     public static int minimumTopBranchHeight = 1;
@@ -76,8 +76,9 @@ public class DesertBaobabFeature extends Feature<NoFeatureConfig> {
                 }
             }
         }
-        int trunkTopHeight = minimumTrunkTopHeight + random.nextInt(trunkTopHeightExtra + 1);
-    
+        // int trunkTopHeight = minimumTrunkTopHeight + random.nextInt(trunkTopHeightExtra + 1);
+        int trunkTopHeight = 1;
+
         for (int i = 0; i < trunkTopHeight; i++) {
             int yOffset = trunkHeight + i;
             for (int j = 0; j < 4; j++) {

@@ -1,6 +1,7 @@
 package coda.thecroodaceousera.client;
 
 import coda.thecroodaceousera.Croods;
+import coda.thecroodaceousera.client.renderer.MosquitoRenderer;
 import coda.thecroodaceousera.client.renderer.MousephantRenderer;
 import coda.thecroodaceousera.init.CroodsBlocks;
 import coda.thecroodaceousera.item.CroodsSpawnEggItem;
@@ -25,6 +26,7 @@ public class ClientEvents {
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.JACKROBAT.get(), JackrobatRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.LIYOTE.get(), LiyoteRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.MOUSEPHANT.get(), MousephantRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.MOSQUITO.get(), MosquitoRenderer::new);
 
         RenderTypeLookup.setRenderLayer(CroodsBlocks.BARREN_SHRUB.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_WALL_BRANCHES.get(), RenderType.cutout());

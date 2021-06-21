@@ -1,5 +1,6 @@
 package coda.thecroodaceousera.entity;
 
+import coda.thecroodaceousera.init.CroodsBlocks;
 import coda.thecroodaceousera.init.CroodsItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
@@ -92,8 +93,8 @@ public class LiyoteEntity extends TameableEntity {
         return 0.6F;
     }
 
-    public static boolean checkLiyoteSpawnRules(EntityType<? extends LiyoteEntity> p_223316_0_, IWorld p_223316_1_, SpawnReason p_223316_2_, BlockPos p_223316_3_, Random p_223316_4_) {
-        return p_223316_1_.getBlockState(p_223316_3_.below()).is(Tags.Blocks.SAND) && p_223316_1_.getRawBrightness(p_223316_3_, 0) > 8;
+    public static boolean checkLiyoteSpawnRules(EntityType<? extends LiyoteEntity> p_223316_0_, IWorld p_223316_1_, SpawnReason p_223316_2_, BlockPos p_223316_3_, Random rand) {
+        return p_223316_1_.getBlockState(p_223316_3_.below()).is(CroodsBlocks.CROODACEOUS_SAND.get()) && p_223316_1_.getRawBrightness(p_223316_3_, 0) > 8 && rand.nextFloat() > 0.95F;
     }
 
     @Override

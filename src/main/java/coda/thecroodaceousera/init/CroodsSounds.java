@@ -7,7 +7,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class CroodsSounds {
+public class    CroodsSounds {
     public static final DeferredRegister<SoundEvent> REGISTER = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Croods.MOD_ID);
 
     public static final RegistryObject<SoundEvent> MOUSEPHANT_AMBIENT = REGISTER.register("mousephant_ambient", () -> new SoundEvent(new ResourceLocation(Croods.MOD_ID, "mousephant.ambient")));

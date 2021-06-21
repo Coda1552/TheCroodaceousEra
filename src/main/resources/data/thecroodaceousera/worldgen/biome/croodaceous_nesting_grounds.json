@@ -1,6 +1,6 @@
 {
   "surface_builder": "thecroodaceousera:croodaceous_desert",
-  "depth": 0.425,
+  "depth": 0.25,
   "scale": 0.08,
   "temperature": 0.8,
   "downfall": 0.1,
@@ -30,10 +30,22 @@
         "minCount": 3,
         "maxCount": 5
       }
+    ],
+    "ambient": [
+      {
+        "type": "thecroodaceousera:mosquito",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      }
     ]
   },
-  "spawn_costs": {},
-  "carvers": {
+  "spawn_costs": {
+    "thecroodaceousera:mosquito": {
+      "energy_budget": 0.125,
+      "charge": 2
+    }
+  },  "carvers": {
     "air": [
       "minecraft:cave"
     ]

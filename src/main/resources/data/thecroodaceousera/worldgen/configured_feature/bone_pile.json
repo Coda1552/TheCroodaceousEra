@@ -2,9 +2,11 @@
   "type": "minecraft:decorated",
   "config": {
     "decorator": {
-      "type": "minecraft:count",
+      "type": "minecraft:count_noise",
       "config": {
-        "count": 1
+        "noise_level": 0.000000005,
+        "below_noise": 0,
+        "above_noise": 1
       }
     },
     "feature": {
@@ -18,15 +20,15 @@
           "type": "minecraft:decorated",
           "config": {
             "decorator": {
-              "type": "minecraft:range",
+              "type": "minecraft:count_noise",
               "config": {
-                "maximum": 500000000,
-                "bottom_offset": 0,
-                "top_offset": 0
+                "noise_level": 0.000000005,
+                "below_noise": 0,
+                "above_noise": 1
               }
             },
             "feature": {
-              "type": "thecroodaceousera:bone_pile_3",
+              "type": "thecroodaceousera:bone_pile",
               "config": {}
             }
           }

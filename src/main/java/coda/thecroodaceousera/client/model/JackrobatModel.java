@@ -113,22 +113,22 @@ public class JackrobatModel<T extends Entity> extends EntityModel<T> {
             this.earRight.xRot = MathHelper.cos(-1.5F + limbSwing * speed * 0.4F) * degree * 0.4F * limbSwingAmount;
         }
         else {
-            float speed = 3.2f;
+            float speed = 2.2f;
             float degree = 1.1f;
-            this.body.xRot = MathHelper.cos(limbSwing * speed * 0.4F) * degree * 0.2F * limbSwingAmount - 0.3F;
-            this.head.xRot = MathHelper.cos(1.0F + limbSwing * speed * 0.4F) * degree * 0.2F * limbSwingAmount + 0.4F;
-            this.legRight.xRot = MathHelper.cos(-1.0F + limbSwing * speed * 0.4F) * 0.45f * 0.8F * limbSwingAmount + 1.2F;
-            this.legRight.yRot = MathHelper.cos(-1.0F + limbSwing * speed * 0.4F) * 0.45f * 0.8F * limbSwingAmount + 0.4F;
-            this.legLeft.xRot = MathHelper.cos(-1.0F + limbSwing * speed * 0.4F) * 0.45f * 0.8F * limbSwingAmount + 1.2F;
-            this.legLeft.yRot = MathHelper.cos(-1.0F + limbSwing * speed * 0.4F) * 0.45f * -0.8F * limbSwingAmount - 0.4F;
+            this.body.xRot = MathHelper.cos(ageInTicks * speed * 0.4F) * degree * 0.2F * 0.65F - 0.3F;
+            this.head.xRot = MathHelper.cos(1.0F + ageInTicks * speed * 0.4F) * degree * 0.2F * 0.65F + 0.4F;
+            this.legRight.xRot = MathHelper.cos(-1.0F + ageInTicks * speed * 0.4F) * 0.45f * 0.8F * 0.35F + 1.2F;
+            this.legRight.yRot = MathHelper.cos(-1.0F + ageInTicks * speed * 0.4F) * 0.45f * 0.8F * 0.65F + 0.4F;
+            this.legLeft.xRot = MathHelper.cos(-1.0F + ageInTicks * speed * 0.4F) * 0.45f * 0.8F * 0.35F + 1.2F;
+            this.legLeft.yRot = MathHelper.cos(-1.0F + ageInTicks * speed * 0.4F) * 0.45f * -0.8F * 0.65F - 0.4F;
             this.armRight.xRot = -0.6981317007977318F;
             this.armRight.yRot = 1.2F;
-            this.armRight.zRot = MathHelper.cos(limbSwing * speed * 0.4F) * degree * 2.0F * limbSwingAmount + 0.8F;
+            this.armRight.zRot = MathHelper.cos(ageInTicks * speed * 0.4F) * degree * 2.0F * 0.65F + 0.8F;
             this.armLeft.xRot = -0.6981317007977318F;
             this.armLeft.yRot = -1.2F;
-            this.armLeft.zRot = MathHelper.cos(limbSwing * speed * 0.4F) * degree * -2.0F * limbSwingAmount - 0.8F;
-            this.earLeft.xRot = MathHelper.cos(-1.0F + limbSwing * speed * 0.4F) * degree * 0.4F * limbSwingAmount;
-            this.earRight.xRot = MathHelper.cos(-1.5F + limbSwing * speed * 0.4F) * degree * 0.4F * limbSwingAmount;
+            this.armLeft.zRot = MathHelper.cos(ageInTicks * speed * 0.4F) * degree * -2.0F * 0.65F - 0.8F;
+            this.earLeft.xRot = MathHelper.cos(-1.0F + ageInTicks * speed * 0.4F) * degree * 0.4F * 0.65F;
+            this.earRight.xRot = MathHelper.cos(-1.5F + ageInTicks * speed * 0.4F) * degree * 0.4F * 0.65F;
         }
     }
 

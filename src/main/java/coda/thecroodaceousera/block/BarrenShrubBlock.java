@@ -12,10 +12,10 @@ import net.minecraft.world.IBlockReader;
 
 import net.minecraft.block.AbstractBlock;
 
-public class BarrenShrub extends BushBlock {
+public class BarrenShrubBlock extends BushBlock {
     protected static final VoxelShape SHAPE = Block.box(1.0D, 0.0D, 1.0D, 15.0D, 26.0D, 15.0D);
 
-    public BarrenShrub(AbstractBlock.Properties builder) {
+    public BarrenShrubBlock(AbstractBlock.Properties builder) {
         super(builder);
     }
 

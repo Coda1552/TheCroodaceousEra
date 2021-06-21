@@ -4,7 +4,7 @@ import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.block.BaobabSaplingBlock;
 import coda.thecroodaceousera.block.BranchesBlock;
 import coda.thecroodaceousera.block.BranchesWallBlock;
-import coda.thecroodaceousera.block.BarrenShrub;
+import coda.thecroodaceousera.block.BarrenShrubBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -19,8 +19,9 @@ public class CroodsBlocks {
 
     // Croodaceous Sand
     public static final Block CROODACEOUS_SAND_BLOCK = new SandBlock(0xe7ba8a, AbstractBlock.Properties.of(Material.SAND).strength(0.5f).sound(SoundType.SAND));
+    public static final Block CROODACEOUS_SANDSTONE_BLOCK = new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.SAND).strength(1.2f).requiresCorrectToolForDrops());
     public static final RegistryObject<Block> CROODACEOUS_SAND = register("croodaceous_sand", () -> CROODACEOUS_SAND_BLOCK);
-    public static final RegistryObject<Block> CROODACEOUS_SANDSTONE = register("croodaceous_sandstone", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.SAND).strength(1.2f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CROODACEOUS_SANDSTONE = register("croodaceous_sandstone", () -> CROODACEOUS_SANDSTONE_BLOCK);
     public static final RegistryObject<Block> CHISELED_CROODACEOUS_SANDSTONE = register("chiseled_croodaceous_sandstone", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.SAND).strength(1.2f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CUT_CROODACEOUS_SANDSTONE = register("cut_croodaceous_sandstone", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.SAND).strength(1.2f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> SMOOTH_CROODACEOUS_SANDSTONE = register("smooth_croodaceous_sandstone", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.SAND).strength(1.2f).requiresCorrectToolForDrops()));
@@ -62,7 +63,7 @@ public class CroodsBlocks {
     public static final RegistryObject<Block> DESERT_BAOBAB_WALL_BRANCHES = register("desert_baobab_wall_branches", () -> new BranchesWallBlock(AbstractBlock.Properties.of(Material.PLANT, MaterialColor.COLOR_BROWN).sound(SoundType.GRASS).noCollission().instabreak()));
 
     // Other
-    public static final RegistryObject<Block> BARREN_SHRUB = register("barren_shrub", () -> new BarrenShrub(AbstractBlock.Properties.of(Material.GRASS, MaterialColor.COLOR_BROWN).noCollission().sound(SoundType.GRASS).strength(0.0f)));
+    public static final RegistryObject<Block> BARREN_SHRUB = register("barren_shrub", () -> new BarrenShrubBlock(AbstractBlock.Properties.of(Material.PLANT, MaterialColor.COLOR_BROWN).noCollission().sound(SoundType.GRASS).strength(0.0f)));
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
         RegistryObject<T> object = REGISTER.register(name, block);

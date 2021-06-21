@@ -1,5 +1,5 @@
 {
-  "surface_builder": "thecroodaceousera:croodaceous_desert",
+  "surface_builder": "thecroodaceousera:croodaceous_hoodoos",
   "depth": 0.925,
   "scale": 0.02,
   "temperature": 0.8,
@@ -21,10 +21,25 @@
       "offset": 2
     }
   },
-  "starts": [],
-  "spawners": {},
-  "spawn_costs": {},
-  "carvers": {
+  "starts": [
+      "thecroodaceousera:configured_bearowl_den"
+  ],
+  "spawners": {
+    "ambient": [
+      {
+        "type": "thecroodaceousera:mosquito",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ]
+  },
+  "spawn_costs": {
+    "thecroodaceousera:mosquito": {
+      "energy_budget": 0.125,
+      "charge": 2
+    }
+  },  "carvers": {
     "air": [
       "minecraft:cave",
       "minecraft:nether_cave"
