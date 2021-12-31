@@ -1,5 +1,5 @@
 {
-  "parent": "thecroodaceousera:block/croods_door_bottom",
+  "parent": "minecraft:block/door_bottom",
   "textures": {
     "top": "thecroodaceousera:block/desert_baobab_door_top",
     "bottom": "thecroodaceousera:block/desert_baobab_door_bottom"

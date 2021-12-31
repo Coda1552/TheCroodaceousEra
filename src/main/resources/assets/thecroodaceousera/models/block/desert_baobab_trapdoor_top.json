@@ -1,5 +1,5 @@
 {
-  "parent": "thecroodaceousera:block/croods_orientable_trapdoor_top",
+  "parent": "minecraft:block/template_orientable_trapdoor_top",
   "textures": {
     "texture": "thecroodaceousera:block/desert_baobab_trapdoor"
   }
