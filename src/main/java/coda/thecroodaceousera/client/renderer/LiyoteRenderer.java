@@ -3,7 +3,7 @@ package coda.thecroodaceousera.client.renderer;
 import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.client.model.LiyoteModel;
 import coda.thecroodaceousera.client.renderer.layer.LiyoteHeldItemLayer;
-import coda.thecroodaceousera.entity.LiyoteEntity;
+import coda.thecroodaceousera.common.entity.LiyoteEntity;
 import com.google.common.collect.Maps;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;

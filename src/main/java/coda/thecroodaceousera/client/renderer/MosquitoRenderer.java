@@ -2,7 +2,7 @@ package coda.thecroodaceousera.client.renderer;
 
 import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.client.model.MosquitoModel;
-import coda.thecroodaceousera.entity.MosquitoEntity;
+import coda.thecroodaceousera.common.entity.MosquitoEntity;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;

@@ -1,13 +1,10 @@
 package coda.thecroodaceousera.client;
 
 import coda.thecroodaceousera.Croods;
-import coda.thecroodaceousera.client.renderer.MosquitoRenderer;
-import coda.thecroodaceousera.client.renderer.MousephantRenderer;
-import coda.thecroodaceousera.init.CroodsBlocks;
-import coda.thecroodaceousera.item.CroodsSpawnEggItem;
-import coda.thecroodaceousera.client.renderer.JackrobatRenderer;
-import coda.thecroodaceousera.client.renderer.LiyoteRenderer;
-import coda.thecroodaceousera.init.CroodsEntities;
+import coda.thecroodaceousera.client.renderer.*;
+import coda.thecroodaceousera.registry.CroodsBlocks;
+import coda.thecroodaceousera.common.item.CroodsSpawnEggItem;
+import coda.thecroodaceousera.registry.CroodsEntities;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.color.IItemColor;
@@ -27,6 +24,7 @@ public class ClientEvents {
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.LIYOTE.get(), LiyoteRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.MOUSEPHANT.get(), MousephantRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.MOSQUITO.get(), MosquitoRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(CroodsEntities.BEAR_OWL.get(), BearOwlRenderer::new);
 
         RenderTypeLookup.setRenderLayer(CroodsBlocks.BARREN_SHRUB.get(), RenderType.cutout());
         RenderTypeLookup.setRenderLayer(CroodsBlocks.DESERT_BAOBAB_WALL_BRANCHES.get(), RenderType.cutout());

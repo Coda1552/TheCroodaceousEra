@@ -2,7 +2,7 @@ package coda.thecroodaceousera.client.renderer;
 
 import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.client.model.JackrobatModel;
-import coda.thecroodaceousera.entity.JackrobatEntity;
+import coda.thecroodaceousera.common.entity.JackrobatEntity;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;

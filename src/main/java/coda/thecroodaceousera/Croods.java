@@ -1,10 +1,7 @@
 package coda.thecroodaceousera;
 
-import coda.thecroodaceousera.entity.JackrobatEntity;
-import coda.thecroodaceousera.entity.LiyoteEntity;
-import coda.thecroodaceousera.entity.MosquitoEntity;
-import coda.thecroodaceousera.entity.MousephantEntity;
-import coda.thecroodaceousera.init.*;
+import coda.thecroodaceousera.common.entity.*;
+import coda.thecroodaceousera.registry.*;
 import coda.thecroodaceousera.client.ClientEvents;
 import com.google.common.collect.ImmutableMap;
 import com.mojang.serialization.Codec;
@@ -13,7 +10,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.FlatChunkGenerator;
 import net.minecraft.world.gen.Heightmap;
@@ -23,7 +19,6 @@ import net.minecraft.world.gen.settings.StructureSeparationSettings;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.world.WorldEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -69,6 +64,7 @@ public class Croods {
         event.put(CroodsEntities.LIYOTE.get(), LiyoteEntity.createAttributes().build());
         event.put(CroodsEntities.MOUSEPHANT.get(), MousephantEntity.createAttributes().build());
         event.put(CroodsEntities.MOSQUITO.get(), MosquitoEntity.createAttributes().build());
+        event.put(CroodsEntities.BEAR_OWL.get(), BearOwlEntity.createAttributes().build());
     }
 
     private void registerCommon(FMLCommonSetupEvent event) {

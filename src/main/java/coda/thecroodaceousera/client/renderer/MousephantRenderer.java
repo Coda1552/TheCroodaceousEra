@@ -2,7 +2,7 @@ package coda.thecroodaceousera.client.renderer;
 
 import coda.thecroodaceousera.Croods;
 import coda.thecroodaceousera.client.model.MousephantModel;
-import coda.thecroodaceousera.entity.MousephantEntity;
+import coda.thecroodaceousera.common.entity.MousephantEntity;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.util.ResourceLocation;

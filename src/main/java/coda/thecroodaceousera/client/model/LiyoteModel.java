@@ -1,6 +1,6 @@
 package coda.thecroodaceousera.client.model;
 
-import coda.thecroodaceousera.entity.LiyoteEntity;
+import coda.thecroodaceousera.common.entity.LiyoteEntity;
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;

@@ -1,7 +1,7 @@
 package coda.thecroodaceousera.client.renderer.layer;
 
 import coda.thecroodaceousera.client.model.LiyoteModel;
-import coda.thecroodaceousera.entity.LiyoteEntity;
+import coda.thecroodaceousera.common.entity.LiyoteEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
