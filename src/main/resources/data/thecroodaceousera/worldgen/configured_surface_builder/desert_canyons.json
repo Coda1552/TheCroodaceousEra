@@ -1,0 +1,14 @@
+{
+  "type": "thecroodaceousera:desert_canyons",
+  "config": {
+    "top_material": {
+      "Name": "thecroodaceousera:croodaceous_sand"
+    },
+    "under_material": {
+      "Name": "thecroodaceousera:hoodoo_shale"
+    },
+    "underwater_material": {
+      "Name": "thecroodaceousera:croodaceous_sand"
+    }
+  }
+}
